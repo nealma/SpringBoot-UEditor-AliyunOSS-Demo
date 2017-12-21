@@ -22,7 +22,7 @@ logging:
 ## Aliyun configuration
 aliyun:
  cdn:
-   endpoint: http://leapkids-dev.oss-cn-beijing.aliyuncs.com
+   endpoint: http://xxx.oss-cn-beijing.aliyuncs.com
  oss:
    endpoint: oss-cn-beijing.aliyuncs.com
    access-key-id: xxx
