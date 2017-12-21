@@ -1,0 +1,31 @@
+#Spring profile configuration
+spring:
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/messages
+  #upload
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 50mb
+      max-request-size: 50mb
+# Logging configuration
+logging:
+  level:
+    org.springframework:
+      web: DEBUG
+      data: DEBUG
+      security: DEBUG
+    com.nealma: DEBUG
+
+## Aliyun configuration
+aliyun:
+ cdn:
+   endpoint: http://leapkids-dev.oss-cn-beijing.aliyuncs.com
+ oss:
+   endpoint: oss-cn-beijing.aliyuncs.com
+   access-key-id: xxx
+   access-key-secret: yyyy
+   bucket-name: xxx-dev
+   file-path: /file/path
